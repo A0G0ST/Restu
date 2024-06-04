@@ -1,0 +1,87 @@
+:root {
+  --background-light: #ffffff;
+  --background-dark: #121212;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+}
+
+[data-theme="dark"] {
+  --background-light: var(--background-dark);
+  --text-light: var(--text-dark);
+  
+}
+
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.custom-navbar {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  color: var(--text-light);
+  transition: color 0.3s;
+}
+
+[data-theme="dark"] .custom-navbar {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+[data-theme="dark"] .custom-navbar a {
+  color: var(--text-dark);
+}
+
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+
+.menu-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h3 {
+  margin-top: 15px;
+}
+
+.menu-item p {
+  margin: 5px 0;
+}
+
+
+.custom-footer {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+[data-theme="dark"] .custom-footer {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+
+@media (max-width: 767.98px) {
+  .menu-item img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger Queen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <script>
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Burger Queen</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Meny</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Om oss</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="carousel" class="container-fluid">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/slidebild1.jpg" class="d-block w-100" alt="Slide Bild 1">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slidebild2.jpg" class="d-block w-100" alt="Slide Bild 2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slidebild3.jpg" class="d-block w-100" alt="Slide Bild 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lunch-menu" class="container py-5">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="menu-item">
+          <img src="images/menybild1.jpg" alt="Meny Bild 1">
+          <h3>Bacon burgare</h3>
+          <p>Pris: 80kr</p>
+          <p>Beskrivning: Sjukt god burgare.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="menu-item">
+          <img src="images/menybild2.jpg" alt="Meny Bild 2">
+          <h3>Kyckling burgare</h3>
+          <p>Pris: 120kr</p>
+          <p>Beskrivning: Väldigt god burgare.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="menu-item">
+          <img src="images/menybild3.jpg" alt="Meny Bild 3">
+          <h3>Fisk burgare</h3>
+          <p>Pris: 139kr</p>
+          <p>Beskrivning: Extremt good burgare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 custom-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Öppettider</h4>
+          <p>Måndag - Fredag: 11:00 - 22:00</p>
+          <p>Lördag - Söndag: 12:00 - 23:00</p>
+        </div>
+        <div class="col-md-6">
+          <h4>Följ oss</h4>
+          <p>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
